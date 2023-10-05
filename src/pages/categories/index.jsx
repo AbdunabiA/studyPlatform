@@ -2,8 +2,10 @@
 
 const Categories = () => {
   return (
-    <div className="container">Categories</div>
-  )
+    <div className="container">
+      Categories
+    </div>
+  );
 }
 
-export default Categories
+export default Categories;

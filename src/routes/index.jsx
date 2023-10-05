@@ -1,9 +1,9 @@
-import React, { Suspense} from "react";
+import React, { Suspense } from "react";
 import Layout from "../components/layout";
-import { Link, Route, Routes } from "react-router-dom";
-import { pages} from "./routes";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
+import { pages } from "./routes";
 import { useTranslation } from "react-i18next";
-
+import { AnimatePresence } from "framer-motion";
 
 const appRoutes = (routes) => {
   return routes.map((route, key) => (
@@ -18,26 +18,29 @@ const appRoutes = (routes) => {
 };
 
 const RoutesWrapper = () => {
+  const location = useLocation();
 
-    const { i18n } = useTranslation();
-    if (i18n.language == "ru-RU") {
-      i18n.changeLanguage("ru");
-    }
+  const { i18n } = useTranslation();
+  if (i18n.language == "ru-RU") {
+    i18n.changeLanguage("ru");
+  }
 
   return (
-    <Routes>
-      <Route
-        path="*"
-        element={
-          <h2>
-            Not Fonund <Link to={"/"}>Home page</Link>
-          </h2>
-        }
-      />
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="*"
+          element={
+            <h2>
+              Not Fonund <Link to={"/"}>Home page</Link>
+            </h2>
+          }
+        />
         <Route path="/" element={<Layout />}>
           {appRoutes(pages)}
         </Route>
-    </Routes>
+      </Routes>
+    </AnimatePresence>
   );
   // return <Routes>{appRoutes(privateRoutes)}</Routes>;
 };

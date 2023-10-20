@@ -1,0 +1,110 @@
+$sm: 578px;
+$md: 769px;
+$lg: 993px;
+$xl: 1201px;
+$xxl: 1401px;  
+$xxxl:1601px;
+$xxxxl:1921px;
+
+.main_wrapper{
+    height: 100%;
+    .subjects_wrapper{
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        @media (max-width:$xxl) {
+            padding: 50px;
+        }
+        @media (max-width:$md) {
+            padding: 30px;
+            gap: 60px;
+        }
+        @media (max-width:$sm) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            // padding: 30px;
+        }
+        .subject_card{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            transition: all .5s;
+            box-shadow: 1px 1px 5px #34495E;
+            &:hover{
+                box-shadow: 0px 10px 10px #34495E;
+                .subject_info{
+                    height: 0px;
+                    padding: 0px;
+                }
+                .hovered_text{
+                    height: 100%;
+                }
+            }
+            .subject_image{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 15px;
+                transition: all .5s;
+            }
+            .subject_info{
+                padding: 20px 0px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .5s;
+                overflow: hidden;
+                @media (max-width:$sm) {
+                    padding: 10px 0px;
+                }
+            }
+            .hovered_text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0px;
+                transition: all .5s;
+                text-align: center;
+                overflow: hidden;
+                background-color: #34495E;
+                
+            }
+            .hovered_text>h3{
+                font-size: 30px;
+                color: #2ECC71;
+                @media (max-width:$xl) {
+                    font-size: 24px;
+                }
+                @media (max-width:$sm) {
+                    font-size: 14px;
+                }
+            }
+            .subject_info>h3{
+                font-size: 30px;
+                color: #34495E;
+                @media (max-width:$xl) {
+                    font-size: 24px;
+                }
+                @media (max-width:$sm) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+.bg{
+    background-color: #34495E;
+    color: #2ECC71;
+}

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import s from './header.module.scss'
 
 const Header = () => {
   return (
@@ -7,7 +8,6 @@ const Header = () => {
         <nav>
           <div>
             <NavLink to={"/"}>Home</NavLink>
-            <NavLink to={"/categories"}>Categories</NavLink>
           </div>
         </nav>
       </div>

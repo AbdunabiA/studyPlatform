@@ -1,0 +1,37 @@
+$sm: 578px;
+$md: 769px;
+$lg: 993px;
+$xl: 1201px;
+$xxl: 1401px;  
+$xxxl:1601px;
+$xxxxl:1921px;
+
+.page_wrapper{
+    padding-top: 50px;
+    @media (max-width:$sm) {
+        padding-top: 20px;
+    }
+    .arrow_left{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        color: #34495E;
+        @media (max-width:$sm) {
+            flex-direction: row-reverse;
+        }
+        &>svg{
+            width: 50px;
+            height: 50px;
+            fill: #34495E;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                fill: #2ECC71;
+            }
+            @media (max-width:$sm) {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}

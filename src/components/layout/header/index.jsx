@@ -4,11 +4,11 @@ import s from './header.module.scss'
 const Header = () => {
   const location = useLocation()
   const pages = ['categories', 'themes']
-  console.log(
-    Object.keys(pages).filter((el) => {
-      return location.pathname.includes(el);
-    })
-  );
+  // console.log(
+  //   Object.keys(pages).filter((el) => {
+  //     return location.pathname.includes(el);
+  //   })
+  // );
   return (
     <header>
       <div className="container">

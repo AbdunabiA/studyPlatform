@@ -4,6 +4,7 @@ import { GetAll } from "modules";
 import { useState } from "react";
 import { Link, useLocation, useParams, useNavigate } from "react-router-dom";
 import qs from "qs";
+import s from './catgeories.module.scss'
 
 const Categories = () => {
   const location = useLocation();

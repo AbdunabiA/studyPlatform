@@ -17,6 +17,11 @@ header{
         padding: 20px 0px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+    nav div h2{
+        text-transform: capitalize;
     }
     nav div a{
         font-size: 32px;

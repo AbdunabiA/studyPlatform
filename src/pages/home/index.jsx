@@ -34,7 +34,7 @@ const Home = () => {
                     >
                       <motion.div
                         className={s.subject_card}
-                        // whileHover={{ y: -10 }}
+                        whileHover={{ y: -10 }}
                       >
                         <div className={s.subject_image}>
                           <img

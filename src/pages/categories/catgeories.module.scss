@@ -15,14 +15,14 @@ $xxxxl:1921px;
         display: flex;
         align-items: center;
         gap: 100px;
-        color: #34495E;
+        color: #00FFA6;
         @media (max-width:$sm) {
             flex-direction: row-reverse;
         }
         &>svg{
             width: 50px;
             height: 50px;
-            fill: #34495E;
+            fill: #00FFA6;
             cursor: pointer;
             transition: all .5s;
             &:hover{
@@ -52,15 +52,15 @@ $xxxxl:1921px;
             flex-direction: column;
             // box-shadow: ;
             border-radius: 15px;
-            box-shadow:  20px 20px 60px #d9d9d9,
-                        -20px -20px 60px #ffffff;
+            box-shadow:  20px 20px 60px #000000,
+                        -20px -20px 60px #060505;
             cursor: pointer;
             overflow: hidden;
             &:hover{
                 .card_content{
                     background-color: #34495E;
                     h3{
-                        color: #2ECC71;
+                        color: #00FFA6;
                     }
                 }
             }
@@ -86,7 +86,7 @@ $xxxxl:1921px;
                 }
                 &>h3{
                     font-size: 26px;
-                    color: #34495E;
+                    color: #00FFA6;
                     text-transform: capitalize;
                     transition: all .5s;
                     @media (max-width:$sm) {

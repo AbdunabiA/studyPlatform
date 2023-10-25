@@ -8,7 +8,7 @@ $xxxxl:1921px;
 
 header{
     height: 8vh;
-    background-color: #34495E;
+    background: #170331;
     nav{
         height: 100%;
     }
@@ -18,14 +18,15 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: white;
+        color: #00FFA6;
+        // text-shadow: 0px 0px 1px rgb(255, 60, 255);
     }
     nav div h2{
         text-transform: capitalize;
     }
     nav div a{
         font-size: 32px;
-        color: white;
+        color: #00FFA6;
         font-weight: bold;
         transition: all .3s;
         &:hover{

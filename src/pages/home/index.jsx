@@ -6,13 +6,12 @@ import s from "./home.module.scss";
 import { motion } from "framer-motion";
 import qs from "qs";
 
-
 const Home = () => {
   const location = useLocation();
   const params = qs.parse(location.search, { ignoreQueryPrefix: true });
   const navigate = useNavigate();
   return (
-    <GetAll url={"/api/subjects"} queryKey={["subjects"]}>
+    <GetAll url={"/subjects-courses/"} queryKey={["subjects"]}>
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;
@@ -25,12 +24,12 @@ const Home = () => {
                   return (
                     <div
                       key={i}
-                      onClick={() =>
-                        navigate({
-                          pathname: `/categories/${el.id}`,
-                          search:qs.stringify({bg:el.image})
-                        })
-                      }
+                      // onClick={() =>
+                      //   navigate({
+                      //     pathname: `/categories/${el.id}/${el.courses[0].id}`,
+                      //     search: qs.stringify({ bg: el.image }),
+                      //   })
+                      // }
                     >
                       <motion.div
                         className={s.subject_card}
@@ -38,7 +37,7 @@ const Home = () => {
                       >
                         <div className={s.subject_image}>
                           <img
-                            src={`http://127.0.0.1:8000${el.image}`}
+                            src={`https://study-platform.up.railway.app${el.image}`}
                             alt=""
                           />
                         </div>
@@ -47,6 +46,25 @@ const Home = () => {
                         </div>
                         <div className={s.subject_info}>
                           <h3>{el.name}</h3>
+                        </div>
+                        <div
+                          className={s.courses}
+                        >
+                          {el.courses.map((course, i) => {
+                            return (
+                              <div
+                                key={i}
+                                className={s.course}
+                                onClick={() =>
+                                  navigate({
+                                    pathname: `/categories/${el.id}/${course.id}`,
+                                  })
+                                }
+                              >
+                                <p>{course.name}</p>
+                              </div>
+                            );
+                          })}
                         </div>
                       </motion.div>
                     </div>

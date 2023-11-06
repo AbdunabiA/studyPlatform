@@ -2,40 +2,40 @@ $sm: 578px;
 $md: 769px;
 $lg: 993px;
 $xl: 1201px;
-$xxl: 1401px;  
-$xxxl:1601px;
-$xxxxl:1921px;
+$xxl: 1401px;
+$xxxl: 1601px;
+$xxxxl: 1921px;
 
-header{
-    height: 8vh;
-    background: #170331;
-    nav{
-        height: 100%;
+header {
+  height: 8vh;
+  background: #170331;
+  nav {
+    height: 100%;
+  }
+  nav div {
+    height: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    // text-shadow: 0px 0px 1px rgb(255, 60, 255);
+  }
+  nav div h2 {
+    text-transform: capitalize;
+  }
+  nav div a {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+    &:hover {
+      color: rgb(61, 215, 169);
+      text-shadow: 1px 1px 1px #000000;
     }
-    nav div{
-        height: 100%;
-        padding: 20px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #00FFA6;
-        // text-shadow: 0px 0px 1px rgb(255, 60, 255);
+
+    @media (max-width: $sm) {
+      font-size: 16px;
     }
-    nav div h2{
-        text-transform: capitalize;
-    }
-    nav div a{
-        font-size: 32px;
-        color: #00FFA6;
-        font-weight: bold;
-        transition: all .3s;
-        &:hover{
-            color: #2ECC71;
-            text-shadow: 1px 1px 1px #000000;
-        }
-        
-        @media (max-width:$sm) {
-            font-size: 16px;
-        }
-    }
+  }
 }

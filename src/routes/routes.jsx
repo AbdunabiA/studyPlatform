@@ -10,15 +10,15 @@ export const pages = [
            component: pageTransition(Home),
          },
          {
-           path: "/categories/:id",
+           path: "/categories/:subjectid/:courseid",
            component: pageTransition(Categories),
          },
          {
-          path:"/themes/:id",
-          component:pageTransition(Themes)
+           path: "/themes/:id",
+           component: pageTransition(Themes),
          },
          {
-          path:"/content/:id",
-          component:pageTransition(Content)
-         }
+           path: "/content/:id",
+           component: pageTransition(Content),
+         },
        ];

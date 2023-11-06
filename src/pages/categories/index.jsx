@@ -12,7 +12,7 @@ import Atropos from "atropos/react";
 const Categories = () => {
   const location = useLocation();
   const params = qs.parse(location.search, { ignoreQueryPrefix: true });
-  const { id } = useParams();
+  const { subjectid, courseid, parentCategoryId } = useParams();
   // const [url, setUrl] = useState(`api/subject/${id}/categories/`);
   const navigate = useNavigate();
   return (
@@ -20,8 +20,8 @@ const Categories = () => {
       queryKey={["categories"]}
       url={
         params.has_children
-          ? `api/category/${id}/`
-          : `api/subject/${id}/categories/`
+          ? `categories-with-parent-category/${parentCategoryId}/${courseid}/`
+          : `related-categories/${subjectid}/${courseid}/`
       }
     >
       {({ items, isLoading, isError, error }) => {
@@ -29,16 +29,18 @@ const Categories = () => {
         if (isError) return <ErrorPage {...{ error }} />;
         console.log(items);
         return (
-          <div className="container">
-            <div className={s.page_wrapper}>
+          <div className={s.page_wrapper}>
+              <div className="container">
               <div className={s.arrow_left}>
                 <ArrowLeft w="30" h="30" onClick={() => navigate(-1)} />
                 <h2>{items?.name}</h2>
               </div>
               <div className={s.category_cards}>
-                {items?.child_categories?.map((el, i) => {
+                {items?.categories?.map((el, i) => {
                   return (
-                    <div
+                    <Atropos
+                      activeOffset={40}
+                      shadowScale={1.1}
                       key={i}
                       className={s.category_card}
                       onClick={() =>
@@ -52,7 +54,7 @@ const Categories = () => {
                         })
                       }
                     >
-                      <Atropos
+                      <div
                         activeOffset={40}
                         shadowScale={1.1}
                         className={s.card_image}
@@ -62,16 +64,17 @@ const Categories = () => {
                         highlight
                       >
                         <img
-                          src={`http://127.0.0.1:8000${el.image}`}
+                          src={`https://study-platform.up.railway.app${el.image}`}
                           alt=""
                           // data-atropos-offset="5"
                           // data-atropos-opacity="1;0.8"
                         />
-                      </Atropos>
+                        <p className={s.category_name}>{el?.name}</p>
+                      </div>
                       <div className={s.card_content}>
                         <h3>{el.name}</h3>
                       </div>
-                    </div>
+                    </Atropos>
                   );
                 })}
               </div>

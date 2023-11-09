@@ -54,8 +54,8 @@ $xxxxl: 1921px;
       flex-direction: column;
       // box-shadow: ;
       border-radius: 15px;
-      // box-shadow: 20px 20px 60px #000000, -20px -20px 60px #060505;
-      background: white;
+      box-shadow: 20px 20px 60px #000000, -20px -20px 60px #060505;
+      // background: white;
       cursor: pointer;
       overflow: hidden;
       &:hover {

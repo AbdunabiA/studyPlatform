@@ -37,7 +37,7 @@ const Home = () => {
                       >
                         <div className={s.subject_image}>
                           <img
-                            src={`https://study-platform.up.railway.app${el.image}`}
+                            src={`http://study-project-api-production.up.railway.app${el.image}`}
                             alt=""
                           />
                         </div>
@@ -47,9 +47,7 @@ const Home = () => {
                         <div className={s.subject_info}>
                           <h3>{el.name}</h3>
                         </div>
-                        <div
-                          className={s.courses}
-                        >
+                        <div className={s.courses}>
                           {el.courses.map((course, i) => {
                             return (
                               <div

@@ -2,7 +2,7 @@ import axios from "axios";
 // import storage from "services/storage";
 
 const api = axios.create({
-  baseURL: "https://study-platform.up.railway.app/api/v1/",
+  baseURL: "http://study-project-api-production.up.railway.app/api/v1/",
   timeout: 30000,
 });
 

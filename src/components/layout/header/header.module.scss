@@ -7,8 +7,8 @@ $xxxl: 1601px;
 $xxxxl: 1921px;
 
 header {
-  height: 8vh;
-  background: #170331;
+  height: 12vh;
+  background: rgba(0, 30, 56, 1);
   nav {
     height: 100%;
   }
@@ -30,7 +30,7 @@ header {
     font-weight: bold;
     transition: all 0.3s;
     &:hover {
-      color: rgb(61, 215, 169);
+      color: #FF9900;
       text-shadow: 1px 1px 1px #000000;
     }
 

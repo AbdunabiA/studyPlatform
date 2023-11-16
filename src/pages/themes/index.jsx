@@ -9,7 +9,7 @@ const Themes = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   return (
-    <GetAll queryKey={["themes"]} url={`api/category/${id}/themes/`}>
+    <GetAll queryKey={["themes"]} url={`category/${id}/themes/`}>
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;

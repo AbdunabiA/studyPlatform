@@ -8,8 +8,10 @@ $xxxxl: 1921px;
 
 .page_wrapper {
   padding-top: 50px;
-  min-height: 92vh;
-  background: #170331;
+  min-height: 88vh;
+  background-image: url('/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: $sm) {
     padding-top: 20px;
   }
@@ -28,7 +30,7 @@ $xxxxl: 1921px;
       cursor: pointer;
       transition: all 0.5s;
       &:hover {
-        fill: rgb(61, 215, 169);
+        fill: #FF9900;
       }
       @media (max-width: $sm) {
         width: 35px;
@@ -54,17 +56,18 @@ $xxxxl: 1921px;
       flex-direction: column;
       // box-shadow: ;
       border-radius: 15px;
-      box-shadow: 20px 20px 60px #000000, -20px -20px 60px #060505;
-      // background: white;
+      box-shadow: 10px 10px 10px rgb(0, 0, 0);
+      background: linear-gradient(to top, #011a34, #003366);
       cursor: pointer;
       overflow: hidden;
       &:hover {
+        background: transparent;
         .card_content {
           // background-color: #34495e;
           height: 0px;
           padding: 0;
           h3 {
-            color: rgb(61, 215, 169);;
+            // color: rgb(61, 215, 169);
           }
         }
         .card_image{
@@ -77,6 +80,7 @@ $xxxxl: 1921px;
         overflow: hidden;
         border-radius: 15px;
         transition: all 0.5s;
+        background: transparent;
         @media (max-width: $sm) {
           height: 150px;
         }

@@ -30,10 +30,11 @@ const Categories = () => {
         console.log(items);
         return (
           <div className={s.page_wrapper}>
-              <div className="container">
+            <div className="container">
               <div className={s.arrow_left}>
                 <ArrowLeft w="30" h="30" onClick={() => navigate(-1)} />
-                <h2>{items?.name}</h2>
+                <h2>{items?.subject.name}</h2>
+                <h2>{items?.course.name}</h2>
               </div>
               <div className={s.category_cards}>
                 {items?.categories?.map((el, i) => {
@@ -55,10 +56,10 @@ const Categories = () => {
                       }
                     >
                       <div
-                        activeOffset={40}
-                        shadowScale={1.1}
+                        // activeOffset={40}
+                        // shadowScale={1.1}
                         className={s.card_image}
-                        alwaysActive
+                        // alwaysActive
                         // shadow
                         // shadowOffset={50}
                         highlight

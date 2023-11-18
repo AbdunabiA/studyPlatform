@@ -18,8 +18,7 @@ $xxxxl: 1921px;
   .arrow_left {
     display: flex;
     align-items: center;
-    gap: 100px;
-    color: white;
+    gap: 50px;
     @media (max-width: $sm) {
       flex-direction: row-reverse;
     }
@@ -36,6 +35,17 @@ $xxxxl: 1921px;
         width: 35px;
         height: 35px;
       }
+    }
+    h2{
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 51px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+      padding: 17px 60px;
+      background-color: #002545;
+      border-radius: 20px;
     }
   }
   .category_cards {
@@ -98,7 +108,7 @@ $xxxxl: 1921px;
           padding: 15px;
         }
         & > h3 {
-          font-size: 26px;
+          font-size: 32px;
           color: white;
           text-transform: capitalize;
           transition: all 0.5s;

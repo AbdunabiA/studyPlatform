@@ -17,8 +17,12 @@ $xxxxl:1921px;
         gap: 100px;
         color: white;
         text-transform: capitalize;
+        @media (max-width:$xl) {
+            gap: 50px;
+        }
         @media (max-width:$sm) {
             flex-direction: row-reverse;
+            justify-content: space-between;
         }
         &>svg{
             width: 50px;
@@ -34,6 +38,20 @@ $xxxxl:1921px;
                 height: 35px;
             }
         }
+        h2{
+            font-size: 20px;
+            font-weight: 400;
+            // line-height: 51px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            padding: 15px 20px;
+            background-color: #002545;
+            border-radius: 15px;
+            @media (max-width:$sm) {
+                font-size: 16px;
+            }
+        }
     }
     .themes_wrapper{
         display: flex;
@@ -47,15 +65,24 @@ $xxxxl:1921px;
             border-radius: 20px;
             transition: background-color .3s linear;
             cursor: pointer;
+            @media (max-width:$xxl) {
+                padding: 45px;
+            }
+            @media (max-width:$xl) {
+                padding: 40px;
+            }
+            @media (max-width:$sm) {
+                padding:25px;
+            }
             &:hover{
                 background-color: #033B6C;
             }
             .theme_text{
                 color: #D4E8FF;
                 // font-family: Inter;
-                font-size: 34px;
+                font-size: 30px;
                 font-weight: 400;
-                line-height: 51px;
+                line-height: 40px;
                 letter-spacing: 0em;
                 text-align: left;
                 display: inline;
@@ -64,13 +91,21 @@ $xxxxl:1921px;
                 -webkit-line-clamp: 2 !important;
                 -webkit-box-orient: vertical !important;
                 overflow: hidden !important;
-
+                @media (max-width:$xxl) {
+                    font-size: 24px;
+                }
+                @media (max-width:$xl) {
+                    font-size: 22px;
+                }
+                @media (max-width:$sm) {
+                    font-size: 18px;
+                }
                 &>span{
                     color: #FF9900;
                     // font-family: Inter;
-                    font-size: 34px;
+                    // font-size: 34px;
                     font-weight: 700;
-                    line-height: 51px;
+                    // line-height: 51px;
                     letter-spacing: 0em;
                     text-align: left;
                     display: inline;

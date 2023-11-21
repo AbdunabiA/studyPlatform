@@ -24,10 +24,13 @@ const Themes = () => {
               <div className={s.themes_wrapper}>
                 {items?.themes?.map((el, i) => {
                   return (
-                    <div key={i} className={s.theme}>
+                    <div
+                      key={i}
+                      className={s.theme}
+                      onClick={() => navigate(`/content/${el.id}`)}
+                    >
                       <p
                         style={{ cursor: "pointer" }}
-                        onClick={() => navigate(`/content/${el.id}`)}
                         className={s.theme_title}
                       ></p>
                       <p className={s.theme_text}>

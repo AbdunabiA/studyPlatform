@@ -34,7 +34,7 @@ const Content = () => {
                         <div className={s.file}>
                           <a
                             href={`http://study-project-api-production.up.railway.app${el?.file}`}
-                            download={true}
+                            download={el.name}
                             target="_blank"
                           >
                             <File />

@@ -31,8 +31,7 @@ const Home = () => {
                       //   })
                       // }
                     >
-                      <h1>Hello</h1>
-                      <p>world</p>
+                      
                       <motion.div
                         className={s.subject_card}
                         whileHover={{ y: -10 }}

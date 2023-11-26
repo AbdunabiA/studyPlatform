@@ -31,6 +31,8 @@ const Home = () => {
                       //   })
                       // }
                     >
+                      <h1>Hello</h1>
+                      <p>world</p>
                       <motion.div
                         className={s.subject_card}
                         whileHover={{ y: -10 }}
@@ -47,6 +49,7 @@ const Home = () => {
                         <div className={s.subject_info}>
                           <h3>{el.name}</h3>
                         </div>
+
                         <div className={s.courses}>
                           {el.courses.map((course, i) => {
                             return (

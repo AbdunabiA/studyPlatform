@@ -25,7 +25,8 @@
     "react-i18next": "^13.2.2",
     "react-router-dom": "^6.16.0",
     "sass": "^1.68.0",
-    "vite-jsconfig-paths": "^2.0.1"
+    "vite-jsconfig-paths": "^2.0.1",
+    "vite-plugin-pwa": "^0.17.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -11,12 +11,12 @@ const manifestForPlugIn = {
     short_name: "BrainBox",
     description: "This is a study platform",
     icons: [
-      // {
-      //   src: "/192.png",
-      //   sizes: "192x192",
-      //   type: "image/png",
-      //   purpose: "favicon",
-      // },
+      {
+        src: "/192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "favicon",
+      },
       {
         src: "/512.png",
         sizes: "512x512",
@@ -29,12 +29,12 @@ const manifestForPlugIn = {
         type: "image/png",
         purpose: "apple touch icon",
       },
-      {
-        src: "/512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "maskable",
-      },
+      // {
+      //   src: "/512.png",
+      //   sizes: "512x512",
+      //   type: "image/png",
+      //   purpose: "maskable",
+      // },
       {
         src: "/512.png",
         sizes: "512x512",

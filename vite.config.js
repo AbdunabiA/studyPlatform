@@ -24,8 +24,8 @@ const manifestForPlugIn = {
         purpose: "favicon",
       },
       {
-        src: "/512.png",
-        sizes: "512x512",
+        src: "/192.png",
+        sizes: "192x192",
         type: "image/png",
         purpose: "apple touch icon",
       },

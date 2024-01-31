@@ -27,7 +27,7 @@ const Categories = () => {
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;
-        console.log(items);
+        // console.log(items);
         return (
           <div className={s.page_wrapper}>
             <div className="container">

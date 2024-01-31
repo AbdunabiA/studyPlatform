@@ -4,7 +4,7 @@ import jsconfigPaths from "vite-jsconfig-paths";
 import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 const manifestForPlugIn = {
-  registerType: "prompt",
+  registerType: "autoUpdate",
   // includeAssests: ["favicon.ico", "apple-touc-icon.png", "masked-icon.svg"],
   manifest: {
     name: "BrainBox",

@@ -15,7 +15,7 @@ const Content = () => {
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;
-        console.log(items);
+        // console.log(items);
         return (
           <div className={s.page_wrapper}>
             <div className="container">
@@ -26,25 +26,25 @@ const Content = () => {
                 <h1>{items?.name}</h1>
                 <p>{items?.text}</p>
               </div>
+              <div className={s.files} >
               {items.files
                 ? items.files.map((el, i) => {
-                    console.log(el.file);
+                    // console.log(el.file);
                     return (
-                      <div className={s.files} key={i}>
-                        <div className={s.file}>
-                          <a
-                            href={`http://study-project-api-production.up.railway.app${el?.file}`}
-                            download={el.name}
-                            target="_blank"
-                          >
-                            <File />
-                            <span>{el?.name}</span>
-                          </a>
-                        </div>
+                      <div className={s.file} key={i}>
+                        <a
+                          href={`http://study-project-api-production.up.railway.app${el?.file}`}
+                          download={el.name}
+                          target="_blank"
+                        >
+                          <File />
+                          <span>{el?.name}</span>
+                        </a>
                       </div>
                     );
                   })
-                : null}
+                  : null}
+              </div>
               {items?.images ? (
                 <div className={s.images}>
                   {items?.images.map((el, i) => {

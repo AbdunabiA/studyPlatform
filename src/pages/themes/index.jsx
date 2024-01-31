@@ -13,7 +13,7 @@ const Themes = () => {
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;
-        console.log(items);
+        // console.log(items);
         return (
           <div className="container">
             <div className={s.page_wrapper}>

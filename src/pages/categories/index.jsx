@@ -65,7 +65,7 @@ const Categories = () => {
                         highlight
                       >
                         <img
-                          src={`http://study-project-api-production.up.railway.app${el.image}`}
+                          src={`http://1079583-cp51749.tmweb.ru${el.image}`}
                           alt=""
                           // data-atropos-offset="5"
                           // data-atropos-opacity="1;0.8"

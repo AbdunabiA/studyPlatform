@@ -15,7 +15,7 @@ const Content = () => {
       {({ items, isLoading, isError, error }) => {
         if (isLoading) return <Loader />;
         if (isError) return <ErrorPage {...{ error }} />;
-        // console.log(items);
+        console.log(items);
         return (
           <div className={s.page_wrapper}>
             <div className="container">
@@ -33,8 +33,8 @@ const Content = () => {
                     return (
                       <div className={s.file} key={i}>
                         <a
-                          href={`http://study-project-api-production.up.railway.app${el?.file}`}
-                          download={el.name}
+                          href={`http://1079583-cp51749.tmweb.ru${el?.file}`}
+                          download
                           target="_blank"
                         >
                           <File />
@@ -51,7 +51,7 @@ const Content = () => {
                     return (
                       <div className={s.image} key={i}>
                         <img
-                          src={`http://study-project-api-production.up.railway.app${el?.image}`}
+                          src={`http://1079583-cp51749.tmweb.ru${el?.image}`}
                           alt=""
                         />
                       </div>

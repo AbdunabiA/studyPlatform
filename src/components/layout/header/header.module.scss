@@ -7,7 +7,7 @@ $xxxl: 1601px;
 $xxxxl: 1921px;
 
 header {
-  height: 12vh;
+  height: 8vh;
   background: rgba(0, 30, 56, 1);
   nav {
     height: 100%;
@@ -24,7 +24,7 @@ header {
   nav div h2 {
     text-transform: capitalize;
     @media (max-width:$sm) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
   nav div a {
@@ -38,7 +38,7 @@ header {
     }
 
     @media (max-width: $sm) {
-      font-size: 20px;
+      font-size: 22px;
     }
   }
 }

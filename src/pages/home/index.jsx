@@ -31,14 +31,13 @@ const Home = () => {
                       //   })
                       // }
                     >
-                      
                       <motion.div
                         className={s.subject_card}
                         whileHover={{ y: -10 }}
                       >
                         <div className={s.subject_image}>
                           <img
-                            src={`http://study-project-api-production.up.railway.app${el.image}`}
+                            src={`http://1079583-cp51749.tmweb.ru${el.image}`}
                             alt=""
                           />
                         </div>

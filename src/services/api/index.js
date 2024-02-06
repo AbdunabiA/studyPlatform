@@ -4,7 +4,7 @@ import axios from "axios";
 const api = axios.create({
   // baseURL: 'https://corsproxy.io/?' + encodeURIComponent("http://1079583-cp51749.tmweb.ru/api/v1/"),
   baseURL:
-    "https://thingproxy.freeboard.io/fetch/http://1079583-cp51749.tmweb.ru/api/v1/",
+    "http://1079583-cp51749.tmweb.ru/api/v1/",
   timeout: 30000,
 });
 

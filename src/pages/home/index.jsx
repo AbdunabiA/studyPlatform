@@ -37,7 +37,7 @@ const Home = () => {
                       >
                         <div className={s.subject_image}>
                           <img
-                            src={`http://1079583-cp51749.tmweb.ru${el.image}`}
+                            src={`https://1079583-cp51749.tmweb.ru${el.image}`}
                             alt=""
                           />
                         </div>

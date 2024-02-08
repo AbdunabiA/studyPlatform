@@ -33,7 +33,7 @@ const Content = () => {
                     return (
                       <div className={s.file} key={i}>
                         <a
-                          href={`http://1079583-cp51749.tmweb.ru${el?.file}`}
+                          href={`https://1079583-cp51749.tmweb.ru${el?.file}`}
                           download
                           target="_blank"
                         >
@@ -51,7 +51,7 @@ const Content = () => {
                     return (
                       <div className={s.image} key={i}>
                         <img
-                          src={`http://1079583-cp51749.tmweb.ru${el?.image}`}
+                          src={`https://1079583-cp51749.tmweb.ru${el?.image}`}
                           alt=""
                         />
                       </div>

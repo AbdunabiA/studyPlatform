@@ -8,7 +8,7 @@ $xxxxl: 1921px;
 
 .main_wrapper {
   min-height: 88vh;
-  background-image: url('/bg.png');
+  background-image: url("/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   .subjects_wrapper {
@@ -31,6 +31,7 @@ $xxxxl: 1921px;
     .subject_card {
       width: 100%;
       height: 100%;
+      max-height: 400px;
       display: flex;
       flex-direction: column;
       // overflow: hidden;
@@ -44,21 +45,20 @@ $xxxxl: 1921px;
       z-index: 0;
       // overflow: hidden;
       cursor: pointer;
-      
+
       &:hover {
         box-shadow: 0px 20px 15px #000000;
-        .subject_info > h3{
-          color: #FF9900;
+        .subject_info > h3 {
+          color: #ff9900;
         }
-        .courses{
+        .courses {
           background: linear-gradient(to top, #011a34, #003366);
           height: 100%;
-          .course{
-          height: 100%;
-          // border: 1px solid white;
+          .course {
+            height: 100%;
+            // border: 1px solid white;
+          }
         }
-        }
-        
       }
       .subject_image {
         width: 100%;
@@ -107,7 +107,7 @@ $xxxxl: 1921px;
           font-size: 14px;
         }
       }
-      .courses{
+      .courses {
         width: 100%;
         height: 0;
         display: grid;
@@ -115,33 +115,33 @@ $xxxxl: 1921px;
         position: absolute;
         top: 0;
         left: 0;
-        
+
         overflow: hidden;
         background: linear-gradient(to top, #011a34, #003366);
         background: transparent;
-        transition: all .3s;
+        transition: all 0.3s;
         border-radius: 15px;
-        .course{
+        .course {
           display: flex;
           align-items: center;
           justify-content: center;
           color: white;
-          transition: all .5s;
+          transition: all 0.5s;
           font-size: 24px;
           font-weight: bold;
           height: 0;
           overflow: hidden;
           border-radius: 15px;
-          &:hover{
-            color: #FF9900;
-            border: 1px solid #FF9900;
+          &:hover {
+            color: #ff9900;
+            border: 1px solid #ff9900;
           }
         }
       }
       .subject_info > h3 {
         font-size: 30px;
         color: white;
-        transition: all .3s;
+        transition: all 0.3s;
         @media (max-width: $xl) {
           font-size: 24px;
         }
@@ -155,5 +155,5 @@ $xxxxl: 1921px;
 
 .bg {
   background-color: #34495e;
-  color: #FF9900;
+  color: #ff9900;
 }

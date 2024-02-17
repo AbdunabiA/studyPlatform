@@ -19,7 +19,6 @@ const Home = () => {
         return (
           <div className={s.main_wrapper}>
             <div className="container">
-              <h1 style={{ color: "white" }}>Abdunabi Abduvaxobov qilgan</h1>
               <div className={s.subjects_wrapper}>
                 {items.map((el, i) => {
                   return (

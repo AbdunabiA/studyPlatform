@@ -11,6 +11,7 @@ header {
   background: rgba(0, 30, 56, 1);
   position: sticky;
   top: 0;
+  z-index: 10000;
   nav {
     height: 100%;
   }

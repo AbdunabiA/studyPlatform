@@ -9,6 +9,8 @@ $xxxxl: 1921px;
 header {
   height: 8vh;
   background: rgba(0, 30, 56, 1);
+  position: sticky;
+  top: 0;
   nav {
     height: 100%;
   }

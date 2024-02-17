@@ -12,6 +12,12 @@ const manifestForPlugIn = {
     description: "This is a study platform",
     icons: [
       {
+        src: "/144.png",
+        sizes: "144x144",
+        type: "image/png",
+        purpose: "favicon",
+      },
+      {
         src: "/192.png",
         sizes: "192x192",
         type: "image/png",

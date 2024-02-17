@@ -40,6 +40,7 @@ const Categories = () => {
                 {items?.categories?.map((el, i) => {
                   return (
                     <Atropos
+                      rotateTouch={false}
                       activeOffset={40}
                       shadowScale={1.1}
                       key={i}

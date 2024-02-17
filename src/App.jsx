@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-    <Suspense fallback="loading...">
+    {/* <Suspense fallback="loading..."> */}
       <RoutesWrapper />
-    </Suspense>
+    {/* </Suspense> */}
     </>
   );
 }

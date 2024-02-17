@@ -10,7 +10,7 @@ const appRoutes = (routes) => {
     <React.Fragment key={key}>
       <Route
         path={route.path}
-        element={<Suspense fallback="LOADING...">{route.component}</Suspense>}
+        element={route.component}
       />
       {route.children && appRoutes(route.children)}
     </React.Fragment>
@@ -20,10 +20,10 @@ const appRoutes = (routes) => {
 const RoutesWrapper = () => {
   const location = useLocation();
 
-  const { i18n } = useTranslation();
-  if (i18n.language == "ru-RU") {
-    i18n.changeLanguage("ru");
-  }
+  // const { i18n } = useTranslation();
+  // if (i18n.language == "ru-RU") {
+  //   i18n.changeLanguage("ru");
+  // }
 
   return (
     <AnimatePresence mode="wait" initial={false}>
